@@ -73,12 +73,10 @@ def RUFFTest(matrix, k=2, alpha=0.5):
     # with itself, we check to see if the intersection of the union of the 
     # target columns is below the required threshold
     
-    # TODO: Check that the above is working as expected
     possibleColumnNumbers = np.arange(n)
     arrayOfSetsOfArrays = np.tile(possibleColumnNumbers, (k,1))
     columnSets = cartesian_product(*arrayOfSetsOfArrays)
     
-    # TODO: Check that the code is working here as well
     for targColumnSet in columnSets:
         
         
